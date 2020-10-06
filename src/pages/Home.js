@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      <h1> Home </h1>
+      <h1 style={{color: 'black'}}> Home </h1>
       <Footer />
     </div>
   )

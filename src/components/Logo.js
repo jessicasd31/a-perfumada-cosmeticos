@@ -21,6 +21,7 @@ const LogoLink = styled(Link)`
     color: white;
     font-weight: normal;
     font-size: 20pt;
+    white-space: nowrap;
   }
 
   small {

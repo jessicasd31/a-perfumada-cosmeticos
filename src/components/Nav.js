@@ -10,24 +10,36 @@ const HeaderContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #121618;
-  color: white;
+  background-color: var(--bgBlack);
+  color: var(--primary);
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding: 1.6rem 4rem;
+  }
 `
 
 const NavList = styled.ul`
   display: inline-flex;
   list-style: none;
+
+  @media (max-width: 1200px) {
+    margin-top: 1.8rem;
+  }
 `
 
-const Liink = styled(Link)`
+const LinkNav = styled(Link)`
     margin: 0 1.5rem;
-    text-decoration: none;
-    color: white;
     opacity: 0.8;
 
-    &:hover {
-      cursor: pointer;
-      color: #92194F;
+    &:hover, &:active {
+      color: var(--secundary);
+    }
+
+    @media (max-width: 1200px) {
+      margin: 0 0.5rem;
+      flex: 1;
+      font-size: 12pt;
     }
 `
 
@@ -37,16 +49,16 @@ const Header = () => {
       <Logo />
       <NavList>
         <li>
-          <Liink to="/">Home</Liink>
+          <LinkNav to="/">Home</LinkNav>
         </li>
         <li>
-          <Liink to="/">Sobre</Liink>
+          <LinkNav to="/">Sobre</LinkNav>
         </li>
         <li>
-          <Liink to="/">Cursos</Liink>
+          <LinkNav to="/">Cursos</LinkNav>
         </li>
         <li>
-          <Liink to="/">Contato</Liink>
+          <LinkNav to="/">Contato</LinkNav>
         </li>
       </NavList>
     </HeaderContainer>
