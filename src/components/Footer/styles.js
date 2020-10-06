@@ -24,23 +24,24 @@ export const FooterContainer = styled.footer`
     align-items: center;
   }
 
+  img {
+    width: 14vw;
+  }
+
   @media (max-width: 800px) {
     max-height: 70vh;
     padding: 2rem;
     flex-flow: column wrap;
 
-    h1 {
-      font-size: 12pt;
+    img {
+      width: 40vw;
+      align-self: center;
     }
 
-    img, .fa-facebook, .fa-instagram {
+    .fa-facebook, .fa-instagram {
       width: 30px;
       height: 30px;
       font-size: 12pt;
-    }
-
-    small {
-      font-size: 6pt;
     }
   }
 `

@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../Logo'
 import { Link } from 'react-router-dom'
 import { 
   FooterContainer, 
@@ -11,7 +10,7 @@ import {
 
 const Footer = () => (
   <FooterContainer>
-    <Logo />
+    <img src={require('../../assets/logo.svg')} alt="Logo A Perfumada Cosméticos" />
     <IconsMedia>
       <Link to="">
         <i className="fa fa-facebook fa-lg" aria-hidden="true" />
