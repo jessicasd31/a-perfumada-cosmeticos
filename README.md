@@ -9,9 +9,9 @@ This project is a web application for enrolling in beauty courses offered by the
 <details>
   <summary>Main tools used in this project</summary>
   <section>
-    <div>React</div>
-    <div>styled-components</div>
-    <div>react-router-dom</div>
+    <div>- React</div>
+    <div>- styled-components</div>
+    <div>- react-router-dom</div>
   </section>
 </details>
 
