@@ -1,8 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const HeaderContainer = styled.nav`
+export const HeaderContainer = styled.nav`
   width: 100%;
   padding: 2rem 4rem;
   min-height: 20vh;
@@ -26,7 +25,7 @@ const HeaderContainer = styled.nav`
   }
 `
 
-const NavList = styled.ul`
+export const NavList = styled.ul`
   display: inline-flex;
   list-style: none;
 
@@ -35,7 +34,7 @@ const NavList = styled.ul`
   }
 `
 
-const LinkNav = styled(Link)`
+export const LinkNav = styled(Link)`
     margin: 0 1.5rem;
     opacity: 0.8;
 
@@ -49,27 +48,3 @@ const LinkNav = styled(Link)`
       font-size: 12pt;
     }
 `
-
-const Header = () => {
-  return (
-    <HeaderContainer>
-      <img src={require('../assets/logo.svg')} alt="Logo A Perfumada Cosméticos" />
-      <NavList>
-        <li>
-          <LinkNav to="/">Home</LinkNav>
-        </li>
-        <li>
-          <LinkNav to="/sobre">Sobre</LinkNav>
-        </li>
-        <li>
-          <LinkNav to="/cursos">Cursos</LinkNav>
-        </li>
-        <li>
-          <LinkNav to="/contato">Contato</LinkNav>
-        </li>
-      </NavList>
-    </HeaderContainer>
-  )
-}
-
-export default Header;

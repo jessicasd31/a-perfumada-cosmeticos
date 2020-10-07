@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const Page = styled.article`
   width: 100%;
   min-height: 60vh;
-  background-image: url('bg.jpg');
+  background: url('bg.jpg') no-repeat;
+  background-attachment: fixed;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@ const Page = styled.article`
 
   p {
     color: var(--gray);
-    margin: 2rem 0 4rem;
+    margin: 2rem 0;
     max-width: 60vw;
 
     strong {
