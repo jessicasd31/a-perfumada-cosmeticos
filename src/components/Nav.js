@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const HeaderContainer = styled.nav`
   width: 100%;
   padding: 2rem 4rem;
+  min-height: 20vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,13 +59,13 @@ const Header = () => {
           <LinkNav to="/">Home</LinkNav>
         </li>
         <li>
-          <LinkNav to="/">Sobre</LinkNav>
+          <LinkNav to="/sobre">Sobre</LinkNav>
         </li>
         <li>
-          <LinkNav to="/">Cursos</LinkNav>
+          <LinkNav to="/cursos">Cursos</LinkNav>
         </li>
         <li>
-          <LinkNav to="/">Contato</LinkNav>
+          <LinkNav to="/contato">Contato</LinkNav>
         </li>
       </NavList>
     </HeaderContainer>

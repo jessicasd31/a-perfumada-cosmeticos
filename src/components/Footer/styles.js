@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   width: 100%;
-  position: fixed;
   left: 0;
   bottom: 0;
   background-color: #121618;
@@ -10,9 +9,11 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
+  min-height: 20vh;
   max-height: 30vh;
   align-items: space-around;
   align-content: space-around;
+  border-top: 1px dashed var(--primary);
 
   .fa-facebook, .fa-instagram {
     background-color: var(--blackLighter);
