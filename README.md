@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project is a web application for enrolling in beauty courses offered by the store.
 
+
+![a-perfumada-cosmeticos](https://github.com/jessicasd31/a-perfumada-cosmeticos/blob/main/public/Centro%20de%20treinamento%20A%20Perfumada.gif)
+
+
 ### `Main tools`
 
 <details>
